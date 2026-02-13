@@ -1,0 +1,33 @@
+{
+  "name": "research-report-fetcher",
+  "version": "1.0.0",
+  "description": "A Trae Skill for fetching research reports from various sources and adding them to the database",
+  "main": "SKILL.md",
+  "keywords": [
+    "trae",
+    "skill",
+    "research",
+    "report",
+    "quantitative",
+    "finance",
+    "database"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/research-report-fetcher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/research-report-fetcher/issues"
+  },
+  "homepage": "https://github.com/yourusername/research-report-fetcher#readme",
+  "dependencies": {
+    "better-sqlite3": "^9.4.0",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
