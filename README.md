@@ -27,7 +27,7 @@ This skill helps you automatically fetch research reports from different sources
 1. Clone this repository into your Trae skills directory:
    ```bash
    cd /path/to/your/workspace/.trae/skills/
-   git clone https://github.com/yourusername/research-report-fetcher.git
+   git clone https://github.com/qizfeng/research-report-fetcher.git
    ```
 
 2. Restart Trae to load the skill.
