@@ -27,7 +27,7 @@ This skill helps you automatically fetch research reports from different sources
 1. Clone this repository into your Trae skills directory:
    ```bash
    cd /path/to/your/workspace/.trae/skills/
-   git clone https://github.com/yourusername/research-report-fetcher.git
+   git clone https://github.com/qizfeng/research-report-fetcher.git
    ```
 
 2. Restart Trae to load the skill.
@@ -119,9 +119,9 @@ const reports = [
     title: "量化投资因子挖掘研究",
     abstract: "本文系统研究了量化投资中的因子挖掘方法论...",
     keywords: ["量化投资", "因子挖掘", "多因子模型"],
-    author: "广发证券金融工程团队",
+    author: "xx证券金融工程团队",
     publishDate: "2024-06-15",
-    institution: "广发证券",
+    institution: "xx证券",
     content: "Full report content...",
     downloadUrl: "https://www.gf.com.cn/reports/quant-research.pdf",
     shareUrl: "https://www.gf.com.cn/reports/quant-research"
@@ -137,7 +137,7 @@ const reports = [
     title: "因子动物园：量化因子框架研究",
     abstract: "本文针对日益膨胀的因子动物园问题...",
     keywords: ["因子动物园", "因子压缩", "量化投资"],
-    author: "石川、刘洋溢、连祥斌",
+    author: "张三、李四",
     publishDate: "2024-12-15",
     institution: "因子动物园公众号",
     content: "Full report content...",
