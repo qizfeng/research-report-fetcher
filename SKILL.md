@@ -1,6 +1,6 @@
 ---
 name: "research-report-fetcher"
-description: "从指定机构、公众号或数据源获取研究报告并添加到数据库。Invoke when user asks to fetch research reports from an institution, WeChat public account, or any research source, or when user wants to add reports from a specific source."
+description: "从指定机构、公众号或数据源通过爬虫和api的方式获取研究报告并添加到数据库。Invoke when user asks to fetch research reports from an institution, WeChat public account, or any research source, or when user wants to add reports from a specific source."
 ---
 
 # Research Report Fetcher
