@@ -38,7 +38,7 @@ Create a Node.js script in `/scripts/` directory to:
 - Fetch report metadata (title, abstract, date, author, etc.)
 - Download or generate report content
 - Insert into the SQLite database
-
+ 
 ### 4. Script Template
 
 ```javascript
@@ -131,6 +131,20 @@ Before adding reports, ensure they meet quality standards:
 - Titles and abstracts should clearly describe research content
 - Content should have clear structure (introduction, methodology, results)
 - Remove duplicates before insertion
+
+**IMPORTANT - URL Validation (Required):**
+- All download_url and share_url must be REAL and VALID URLs
+- DO NOT use placeholder URLs like "https://example.com/..."
+- Always verify URLs are accessible before adding to database
+- If real URLs cannot be obtained, use alternative sources or search for accessible versions
+- For WeChat articles, try to find the original article link or author's other published platforms
+- For academic papers, use arXiv, SSRN, or other open access sources
+
+**URL Verification Steps:**
+1. Test download_url with curl -I to check HTTP status
+2. Verify share_url points to accessible content
+3. If URL returns 404 or is inaccessible, remove the report or find alternative source
+4. Document all URL sources for transparency
 
 ### 7. Run and Verify
 
