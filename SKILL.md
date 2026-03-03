@@ -224,3 +224,65 @@ All fields except `id` are required. Make sure to provide default values if data
 
 ### Database Locked
 If you get "database is locked" error, ensure no other process is accessing the database.
+
+## Available Fetch Scripts
+
+The skill includes three ready-to-use fetch scripts in the `/scripts/` directory:
+
+### 1. WeChat Public Account Fetcher
+**File:** `scripts/fetch-wechat-public-account.js`
+
+Fetches research reports from a specified WeChat public account.
+
+```bash
+node scripts/fetch-wechat-public-account.js "公众号名称"
+```
+
+**Features:**
+- Supports custom public account name via command line argument
+- Validates all download and share URLs before adding
+- Skips invalid URLs automatically and reports them
+- Includes sample quantitative research reports
+
+### 2. Institution Fetcher
+**File:** `scripts/fetch-institution-reports.js`
+
+Fetches research reports from a specified institution (securities firm, fund, etc.).
+
+```bash
+node scripts/fetch-institution-reports.js "机构名称"
+```
+
+**Features:**
+- Supports custom institution name via command line argument
+- Includes sample reports for various topics (quantitative investment, machine learning, commodities, options, etc.)
+- URL validation ensures only valid links are added
+- Comprehensive report content with research background and methodology
+
+### 3. Data Source Fetcher
+**File:** `scripts/fetch-data-source.js`
+
+Fetches research papers from academic data sources.
+
+```bash
+# Usage
+node scripts/fetch-data-source.js <source_type> <search_terms> [max_results]
+
+# Examples
+node scripts/fetch-data-source.js arxiv "quantitative investment, machine learning" 5
+node scripts/fetch-data-source.js ssrn "factor investing"
+node scripts/fetch-data-source.js nber "asset pricing"
+```
+
+**Supported Data Sources:**
+- `arxiv` - arXiv Open-Access Archive
+- `ssrn` - Social Science Research Network
+- `repec` - Research Papers in Economics
+- `nber` - National Bureau of Economic Research
+- `cepr` - Center for Economic Policy Research
+
+**Features:**
+- Supports multiple academic data sources
+- Customizable search terms
+- Configurable maximum results
+- Automatic report generation with proper database format
